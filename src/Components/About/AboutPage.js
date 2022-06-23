@@ -32,7 +32,7 @@ const AboutPage = () => {//Soma
             lastName: "Morales",
             title: "Software Developer",
             description: "Hello everyone, my name is Dan-ell Morales, and I am a Pursuit Fellow.",
-            profilePicture: "https://avatars.githubusercontent.com/u/75141026?v=4"
+            profilePicture: "https://live.staticflickr.com/65535/52165726387_08cedacaf6_n.jpg"
         }
      ];
 
