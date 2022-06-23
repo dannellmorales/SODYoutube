@@ -55,7 +55,12 @@
   align-content: flex-start;
   flex-wrap: wrap;
   height: 50px;
-
-
 }
 
+.Desc{
+  color: aliceblue;
+  font-weight: 900;
+}
+.gh{
+  color: rgb(230, 246, 9);
+}

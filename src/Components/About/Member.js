@@ -1,4 +1,4 @@
-const Member = ({firstName, lastName, title, description, profilePicture }) => {
+const Member = ({firstName, lastName, title, description, profilePicture, github }) => {
     
     let name = `${firstName} ${lastName}`;
 
@@ -16,6 +16,7 @@ const Member = ({firstName, lastName, title, description, profilePicture }) => {
             <div className="bio">
                 <h5 className="about-bio">Bio</h5>
                 <p className="about-description">{description}</p>
+                <p className="github">{github}</p>
             </div>  
         </article>
     );

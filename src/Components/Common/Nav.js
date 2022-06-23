@@ -5,15 +5,18 @@ function Nav({ search, setSearch, submit, setSubmit }) {
 
 
     const handleChange = (event) => {
+ 
         setSearch(event.target.value)
         console.log(search)
     };
-
+  
     const handleSubmit = (event) => {
         event.preventDefault();
+      
         submit ? setSubmit(false) : setSubmit(true)
-
+    
     }
+
     return (
         <header className="gridNav Nav">
             <div className="navWrap">
@@ -24,6 +27,7 @@ function Nav({ search, setSearch, submit, setSubmit }) {
                         <Link to="/aboutpage" className="links">About</Link>
                     </h5>
                 </div>
+            
                 <form onSubmit={handleSubmit}>
                     <input value={search} onChange={handleChange} />
                     <button>Search</button>
