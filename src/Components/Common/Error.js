@@ -12,7 +12,7 @@ export default function Error() {
   <img src="https://cdn.mos.cms.futurecdn.net/y87LyLUSJtRKUQDo6xzLbE-970-80.jpg.webp"></img>
   <br></br>
   
-      <Link to="/" style={err}>Back to the Homepage....</Link>
+      <Link to="*" style={err}>Back to the Homepage....</Link>
     </div>
   )
 }
