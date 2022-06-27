@@ -39,9 +39,9 @@
 .grid {
   display: grid;
   grid-template-areas:
-    "n n n n"
-    "v v v v"
-    "v v v v";
+    "n n n n n"
+    "v v v v sb"
+    "v v v v sb";
 }
 
 .homePage {
@@ -63,4 +63,8 @@
 }
 .gh{
   color: rgb(230, 246, 9);
+}
+
+.nhtf{
+  color: aliceblue;
 }

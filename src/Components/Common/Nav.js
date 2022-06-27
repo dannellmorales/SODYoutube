@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Search.css";
 import {Link} from "react-router-dom"
+
+
+
 function Nav({ search, setSearch, submit, setSubmit }) {
-
-
     const handleChange = (event) => {
  
         setSearch(event.target.value)
@@ -12,9 +13,8 @@ function Nav({ search, setSearch, submit, setSubmit }) {
   
     const handleSubmit = (event) => {
         event.preventDefault();
-      
         submit ? setSubmit(false) : setSubmit(true)
-    
+
     }
 
     return (

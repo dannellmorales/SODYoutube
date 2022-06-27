@@ -6,9 +6,9 @@ import Nav from "./Components/Common/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import AboutPage from "./Components/About/AboutPage";
 import Error from "./Components/Common/Error";
-
+import IndexPage from "./Components/Common/IndexPage";
 function App() {
-  const [videos, setVideos] = useState([])
+  const [videos, setVideos] = useState([]);
   const [search, setSearch] = useState('')
   const [submit, setSubmit] = useState(false)
   
@@ -21,8 +21,6 @@ function App() {
       });
 }  }, [submit]);
 
-
-
   return (
 
     <Router>
@@ -32,10 +30,12 @@ function App() {
           <Route className="vids" path="/" element={<Home videos={videos} />} />
           <Route path="/aboutpage" element={<AboutPage />} />
           <Route path="*" element={<Error/>}/>
+          <Route path="/indexpage" element={<IndexPage/>} videos={videos} />
         </Routes>
       </div>
     </Router>
   )
 }
+
 
 export default App;

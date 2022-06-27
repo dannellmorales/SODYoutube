@@ -1,4 +1,3 @@
-import { Component } from "react";
 import Member from "./Member";
 import "./AboutPage.css";
 import {Link} from "react-router-dom"
