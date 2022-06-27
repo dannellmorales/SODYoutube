@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route className="vids" path="/" element={<Home videos={videos} />} />
           <Route path="/aboutpage" element={<AboutPage />} />
-          <Route path="*" element={<Error/>}/>
+          <Route path="/*" element={<Error/>}/>
           <Route path="/indexpage" element={<IndexPage/>} videos={videos} />
         </Routes>
       </div>
